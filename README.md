@@ -1,6 +1,6 @@
 # C++ By Practice
 
-Learn C++ through hands-on exercises. Inspired by [rust-by-practice](https://practice.rs).
+Learn C++ through hands-on exercises. Inspired by [rust-by-practice](https://github.com/sunface/rust-by-practice).
 
 Built entirely in C++ using the [Crow](https://crowcpp.org/) web framework.
 
