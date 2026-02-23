@@ -1,0 +1,19 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./content:/app/content
+      - ./templates:/app/templates
+      - ./static:/app/static
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/cpp-sandbox:/tmp/cpp-sandbox
+    environment:
+      PORT: 8080
+      CONTENT_DIR: content
+      SANDBOX_IMAGE: gcc:14
+      SANDBOX_TIMEOUT: 5
+      SANDBOX_MEMORY: 128m
+      SANDBOX_TMP_DIR: /tmp/cpp-sandbox
+    restart: unless-stopped

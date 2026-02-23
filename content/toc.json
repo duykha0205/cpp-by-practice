@@ -1,0 +1,100 @@
+{
+  "chapters": [
+    {
+      "id": "01-variables",
+      "title": "Variables",
+      "exercises": [
+        { "slug": "variables", "title": "Variables", "file": "variables.md" }
+      ]
+    },
+    {
+      "id": "02-basic-types",
+      "title": "Basic Types",
+      "exercises": [
+        { "slug": "numbers", "title": "Numbers", "file": "numbers.md" },
+        { "slug": "char-bool", "title": "Char, Bool and Void", "file": "char-bool.md" }
+      ]
+    },
+    {
+      "id": "03-functions",
+      "title": "Functions",
+      "exercises": [
+        { "slug": "functions", "title": "Functions", "file": "functions.md" }
+      ]
+    },
+    {
+      "id": "04-flow-control",
+      "title": "Flow Control",
+      "exercises": [
+        { "slug": "flow-control", "title": "Flow Control", "file": "flow-control.md" }
+      ]
+    },
+    {
+      "id": "05-arrays-strings",
+      "title": "Arrays & Strings",
+      "exercises": [
+        { "slug": "arrays", "title": "Arrays", "file": "arrays.md" },
+        { "slug": "strings", "title": "Strings", "file": "strings.md" }
+      ]
+    },
+    {
+      "id": "06-pointers-references",
+      "title": "Pointers & References",
+      "exercises": [
+        { "slug": "pointers", "title": "Pointers", "file": "pointers.md" },
+        { "slug": "references", "title": "References", "file": "references.md" }
+      ]
+    },
+    {
+      "id": "07-structs-classes",
+      "title": "Structs & Classes",
+      "exercises": [
+        { "slug": "structs", "title": "Structs", "file": "structs.md" },
+        { "slug": "classes", "title": "Classes", "file": "classes.md" },
+        { "slug": "constructors", "title": "Constructors & Destructors", "file": "constructors.md" }
+      ]
+    },
+    {
+      "id": "08-oop",
+      "title": "OOP",
+      "exercises": [
+        { "slug": "inheritance", "title": "Inheritance", "file": "inheritance.md" },
+        { "slug": "polymorphism", "title": "Polymorphism", "file": "polymorphism.md" }
+      ]
+    },
+    {
+      "id": "09-templates",
+      "title": "Templates",
+      "exercises": [
+        { "slug": "function-templates", "title": "Function Templates", "file": "function-templates.md" },
+        { "slug": "class-templates", "title": "Class Templates", "file": "class-templates.md" }
+      ]
+    },
+    {
+      "id": "10-stl",
+      "title": "STL Containers & Algorithms",
+      "exercises": [
+        { "slug": "vector", "title": "Vector", "file": "vector.md" },
+        { "slug": "map", "title": "Map", "file": "map.md" },
+        { "slug": "algorithms", "title": "Algorithms", "file": "algorithms.md" }
+      ]
+    },
+    {
+      "id": "11-memory",
+      "title": "Memory Management",
+      "exercises": [
+        { "slug": "new-delete", "title": "New & Delete", "file": "new-delete.md" },
+        { "slug": "smart-pointers", "title": "Smart Pointers", "file": "smart-pointers.md" }
+      ]
+    },
+    {
+      "id": "12-modern-cpp",
+      "title": "Modern C++",
+      "exercises": [
+        { "slug": "auto-decltype", "title": "Auto & Decltype", "file": "auto-decltype.md" },
+        { "slug": "lambda", "title": "Lambda Expressions", "file": "lambda.md" },
+        { "slug": "move-semantics", "title": "Move Semantics", "file": "move-semantics.md" }
+      ]
+    }
+  ]
+}

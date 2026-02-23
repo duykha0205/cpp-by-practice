@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page_title}}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/codemirror.css">
+    <script src="/static/js/codemirror.js"></script>
+</head>
+<body>
+    <header class="top-bar">
+        <a href="/" class="logo">C++ By Practice</a>
+        <div class="top-bar-right">
+            <button id="theme-toggle" class="icon-btn" title="Toggle theme">
+                <span class="theme-icon">&#9790;</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <nav class="sidebar-nav">
+                {{#chapters}}
+                <div class="sidebar-chapter {{#is_active}}active{{/is_active}}">
+                    <button class="sidebar-chapter-title" data-chapter="{{id}}">
+                        {{title}}
+                    </button>
+                    <ul class="sidebar-exercises {{#is_active}}open{{/is_active}}">
+                        {{#exercises}}
+                        <li>
+                            <a href="{{url}}"
+                               class="{{#is_current}}current{{/is_current}}">
+                                {{title}}
+                            </a>
+                        </li>
+                        {{/exercises}}
+                    </ul>
+                </div>
+                {{/chapters}}
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article class="exercise-content">
+                <h1>{{exercise_title}}</h1>
+                {{{content}}}
+            </article>
+
+            <nav class="exercise-nav">
+                {{#has_prev}}
+                <a href="{{prev_url}}" class="nav-link nav-prev">
+                    &larr; {{prev_title}}
+                </a>
+                {{/has_prev}}
+                {{^has_prev}}
+                <span></span>
+                {{/has_prev}}
+
+                {{#has_next}}
+                <a href="{{next_url}}" class="nav-link nav-next">
+                    {{next_title}} &rarr;
+                </a>
+                {{/has_next}}
+            </nav>
+        </main>
+    </div>
+
+    <script>
+        window.__CODE_BLOCKS__ = {{{code_blocks_json}}};
+    </script>
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/editor.js"></script>
+</body>
+</html>

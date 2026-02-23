@@ -1,0 +1,27 @@
+build/
+cmake-build-*/
+.cache/
+compile_commands.json
+
+*.o
+*.obj
+*.exe
+*.out
+
+# vcpkg
+vcpkg/
+vcpkg_installed/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Rust reference (not part of the project)
+rust-by-practice/

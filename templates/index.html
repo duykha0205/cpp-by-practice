@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page_title}}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <a href="/" class="logo">C++ By Practice</a>
+        <div class="top-bar-right">
+            <button id="theme-toggle" class="icon-btn" title="Toggle theme">
+                <span class="theme-icon">&#9790;</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="home-container">
+        <div class="hero">
+            <h1>C++ By Practice</h1>
+            <p class="hero-subtitle">
+                Learn C++ through hands-on exercises. Read the examples, fill in the blanks,
+                fix the errors, and run your code — all in the browser.
+            </p>
+        </div>
+
+        <div class="chapter-grid">
+            {{#chapters}}
+            <div class="chapter-card">
+                <h2 class="chapter-card-title">{{title}}</h2>
+                <ul class="exercise-list">
+                    {{#exercises}}
+                    <li><a href="{{url}}">{{title}}</a></li>
+                    {{/exercises}}
+                </ul>
+            </div>
+            {{/chapters}}
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>C++ By Practice &mdash; Learn by doing.</p>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

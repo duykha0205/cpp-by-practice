@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page_title}}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <a href="/" class="logo">C++ By Practice</a>
+        <div class="top-bar-right">
+            <button id="theme-toggle" class="icon-btn" title="Toggle theme">
+                <span class="theme-icon">&#9790;</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="home-container">
+        <div class="error-page">
+            <h1>Page Not Found</h1>
+            <p class="error-message">{{error_message}}</p>
+            <a href="/" class="nav-link">&larr; Back to Home</a>
+        </div>
+    </main>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
