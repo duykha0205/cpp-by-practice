@@ -26,18 +26,23 @@ Docker (gcc:14 container)
 
 | # | Topic | Exercises |
 |---|-------|-----------|
-| 1 | Variables | Declaration, const, scope, auto |
-| 2 | Basic Types | Numbers, char, bool, type casting |
-| 3 | Functions | Overloading, default params, pass by ref, recursion |
-| 4 | Flow Control | if/else, switch, for, while, break/continue |
-| 5 | Arrays & Strings | C-arrays, std::array, std::string |
-| 6 | Pointers & References | Raw pointers, references, const pointers |
-| 7 | Structs & Classes | Structs, classes, constructors, copy |
-| 8 | OOP | Inheritance, polymorphism, virtual, abstract |
-| 9 | Templates | Function templates, class templates, variadic |
-| 10 | STL | vector, map, algorithms |
-| 11 | Memory Management | new/delete, unique_ptr, shared_ptr, weak_ptr |
-| 12 | Modern C++ | auto, lambda, move semantics, forwarding |
+| 1 | Variables | Declaration, const, scope, auto, type conversions, brace init |
+| 2 | Basic Types | Numbers, char, bool, enums, enum class, typedef, using |
+| 3 | Functions | Overloading, default params, pass by ref, recursion, inline, constexpr, function pointers, std::function |
+| 4 | Flow Control | if/else, switch, for, while, break/continue, if-init (C++17), constexpr if |
+| 5 | Arrays & Strings | C-arrays, std::array, std::string, std::string_view |
+| 6 | Pointers & References | Raw pointers, references, const pointers, void pointers, nullptr |
+| 7 | Structs & Classes | Structs, classes, constructors, operator overloading, static members, friends, namespaces |
+| 8 | OOP | Inheritance, polymorphism, abstract classes, interfaces, RAII, Rule of Five |
+| 9 | Templates | Function templates, class templates, specialization, SFINAE |
+| 10 | STL | vector, map, set, multimap, algorithms, iterators |
+| 11 | Memory Management | new/delete, unique_ptr, shared_ptr, weak_ptr, memory pitfalls, custom deleters |
+| 12 | Modern C++ | auto, lambda, move semantics, structured bindings, optional, variant, ranges, concepts |
+| 13 | Error Handling | Exceptions, custom exceptions, exception safety, error codes, std::expected |
+| 14 | File I/O & Streams | ifstream, ofstream, string streams, std::format (C++20) |
+| 15 | Concurrency | Threads, mutexes, locks, async/future, atomics, condition variables |
+| 16 | Advanced Templates | Type traits, SFINAE, enable_if, fold expressions, CRTP, mixins |
+| 17 | C++20/23 Features | Coroutines, three-way comparison, spans, consteval, constinit, template metaprogramming |
 
 ## Prerequisites
 

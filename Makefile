@@ -30,7 +30,8 @@ rebuild: clean build ## Clean then build from scratch
 
 # ---------- Run ----------
 
-run: build ## Build then run the server
+run: ## Build if needed, then run the server
+	@[ -f $(BINARY) ] || $(MAKE) build
 	cd $(BUILD_DIR) && ./cpp-by-practice
 
 # ---------- Docker ----------
