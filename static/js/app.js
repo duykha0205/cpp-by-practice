@@ -13,6 +13,7 @@
         document.documentElement.setAttribute('data-theme', next);
         localStorage.setItem('theme', next);
         updateIcon(next);
+        updateHljsTheme(next);
     });
 
     function updateIcon(theme) {
@@ -21,6 +22,17 @@
             icon.textContent = theme === 'dark' ? '\u263E' : '\u2600';
         }
     }
+
+    function updateHljsTheme(theme) {
+        var dark = document.getElementById('hljs-dark');
+        var light = document.getElementById('hljs-light');
+        if (dark && light) {
+            dark.disabled = (theme !== 'dark');
+            light.disabled = (theme !== 'light');
+        }
+    }
+
+    updateHljsTheme(saved);
 })();
 
 // Sidebar toggle

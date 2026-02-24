@@ -1,28 +1,99 @@
-/* CodeMirror container styling */
-.cm-editor {
+/* ===== CodeMirror 5 Custom Theme ===== */
+/* Theme name: "custom" — adapts to the app's dark/light CSS variables */
+
+.cm-s-custom.CodeMirror {
     font-family: var(--font-mono);
     font-size: 0.9rem;
     line-height: 1.5;
-    min-height: 120px;
     background: var(--bg-editor);
+    color: var(--text-primary);
+    height: auto;
+    min-height: 120px;
 }
 
-.cm-editor .cm-content {
-    padding: 0.75rem;
-}
-
-.cm-editor .cm-gutters {
+.cm-s-custom .CodeMirror-gutters {
     background: var(--bg-secondary);
     border-right: 1px solid var(--border-color);
     color: var(--text-muted);
 }
 
-.cm-editor .cm-activeLineGutter,
-.cm-editor .cm-activeLine {
+.cm-s-custom .CodeMirror-linenumber {
+    color: var(--text-muted);
+    padding: 0 0.5rem;
+}
+
+.cm-s-custom .CodeMirror-cursor {
+    border-left: 2px solid var(--text-primary);
+}
+
+.cm-s-custom .CodeMirror-selected {
+    background: rgba(88, 166, 255, 0.2);
+}
+
+.cm-s-custom .CodeMirror-activeline-background {
     background: var(--bg-tertiary);
 }
 
-/* Fallback textarea styling */
+.cm-s-custom .CodeMirror-matchingbracket {
+    color: var(--accent) !important;
+    border-bottom: 1px solid var(--accent);
+}
+
+/* ===== Syntax Token Colors (Dark) ===== */
+[data-theme="dark"] .cm-s-custom .cm-keyword    { color: #c678dd; }
+[data-theme="dark"] .cm-s-custom .cm-def        { color: #61afef; }
+[data-theme="dark"] .cm-s-custom .cm-variable    { color: #e6edf3; }
+[data-theme="dark"] .cm-s-custom .cm-variable-2  { color: #e5c07b; }
+[data-theme="dark"] .cm-s-custom .cm-variable-3  { color: #e5c07b; }
+[data-theme="dark"] .cm-s-custom .cm-type        { color: #e5c07b; }
+[data-theme="dark"] .cm-s-custom .cm-number      { color: #d19a66; }
+[data-theme="dark"] .cm-s-custom .cm-string      { color: #98c379; }
+[data-theme="dark"] .cm-s-custom .cm-string-2    { color: #98c379; }
+[data-theme="dark"] .cm-s-custom .cm-comment     { color: #5c6370; font-style: italic; }
+[data-theme="dark"] .cm-s-custom .cm-operator    { color: #56b6c2; }
+[data-theme="dark"] .cm-s-custom .cm-meta        { color: #61afef; }
+[data-theme="dark"] .cm-s-custom .cm-qualifier   { color: #d19a66; }
+[data-theme="dark"] .cm-s-custom .cm-builtin     { color: #e5c07b; }
+[data-theme="dark"] .cm-s-custom .cm-atom        { color: #d19a66; }
+[data-theme="dark"] .cm-s-custom .cm-tag         { color: #e06c75; }
+[data-theme="dark"] .cm-s-custom .cm-attribute   { color: #d19a66; }
+[data-theme="dark"] .cm-s-custom .cm-property    { color: #61afef; }
+
+/* ===== Syntax Token Colors (Light) ===== */
+[data-theme="light"] .cm-s-custom .cm-keyword    { color: #a626a4; }
+[data-theme="light"] .cm-s-custom .cm-def        { color: #4078f2; }
+[data-theme="light"] .cm-s-custom .cm-variable    { color: #1f2328; }
+[data-theme="light"] .cm-s-custom .cm-variable-2  { color: #c18401; }
+[data-theme="light"] .cm-s-custom .cm-variable-3  { color: #c18401; }
+[data-theme="light"] .cm-s-custom .cm-type        { color: #c18401; }
+[data-theme="light"] .cm-s-custom .cm-number      { color: #986801; }
+[data-theme="light"] .cm-s-custom .cm-string      { color: #50a14f; }
+[data-theme="light"] .cm-s-custom .cm-string-2    { color: #50a14f; }
+[data-theme="light"] .cm-s-custom .cm-comment     { color: #a0a1a7; font-style: italic; }
+[data-theme="light"] .cm-s-custom .cm-operator    { color: #0184bc; }
+[data-theme="light"] .cm-s-custom .cm-meta        { color: #4078f2; }
+[data-theme="light"] .cm-s-custom .cm-qualifier   { color: #986801; }
+[data-theme="light"] .cm-s-custom .cm-builtin     { color: #c18401; }
+[data-theme="light"] .cm-s-custom .cm-atom        { color: #986801; }
+[data-theme="light"] .cm-s-custom .cm-tag         { color: #e45649; }
+[data-theme="light"] .cm-s-custom .cm-attribute   { color: #986801; }
+[data-theme="light"] .cm-s-custom .cm-property    { color: #4078f2; }
+
+/* ===== Scrollbar ===== */
+.cm-s-custom .CodeMirror-vscrollbar,
+.cm-s-custom .CodeMirror-hscrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color) transparent;
+}
+
+/* ===== highlight.js overrides ===== */
+/* Make hljs use our existing pre backgrounds */
+.exercise-content pre code.hljs {
+    background: transparent;
+    padding: 0;
+}
+
+/* ===== Fallback textarea ===== */
 .editor-fallback {
     font-family: var(--font-mono) !important;
     tab-size: 4;
